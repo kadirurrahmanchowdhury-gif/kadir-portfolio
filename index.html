@@ -896,13 +896,28 @@ footer {
 
 /* MOBILE */
 @media(max-width:900px){
-  nav { padding:0 20px; }
-  .nav-links { display:none; }
-  section { padding:80px 24px; }
-  #home { grid-template-columns:1fr; gap:40px; padding:120px 24px 60px; }
-  .hero-right { order:-1; }
- .hero-photo-wrap { width:220px; height:260px; margin:0 auto; }
-  .hero-badge, .hero-badge2 { display:none; }
+
+nav { padding:0 20px; }
+.nav-links { display:none; }
+section { padding:80px 24px; }
+#home { grid-template-columns:1fr; gap:40px; padding:120px 24px 60px; }
+.hero-right { order:-1; }
+
+.hero-photo-wrap { 
+  width:220px; 
+  height:260px; 
+  margin:20px auto; 
+}
+
+.hero-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.hero-badge, .hero-badge2 { display:none; }
+
+}
   .about-grid, .contact-grid { grid-template-columns:1fr; gap:36px; }
   .skills-grid { grid-template-columns:1fr; }
   .services-grid, .projects-grid { grid-template-columns:1fr; }
@@ -1426,3 +1441,4 @@ document.querySelector('.form-submit').addEventListener('click', function(e) {
 </body>
 
 </html>
+
