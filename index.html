@@ -894,9 +894,7 @@ footer {
 .reveal-delay-3 { transition-delay:0.3s; }
 .reveal-delay-4 { transition-delay:0.4s; }
 
-/* MOBILE */
-/* MOBILE */
-/* MOBILE */
+/* ─── MOBILE ─── */
 @media(max-width:900px){
   nav { padding:0 20px; }
   .nav-links { display:none; }
@@ -933,23 +931,23 @@ footer {
     margin:0 auto;
   }
 
-  /* Remove the blue top border line */
   .hero-photo-bg::before {
     display:none;
   }
 
   .hero-photo-bg {
-  inset:-8px;
-  border-radius:16px;
-}
+    display:none;
+  }
 
-.hero-photo {
-  border-radius:12px;
-}
+  .hero-photo {
+    border-radius:16px !important;
+    outline: 1px solid rgba(56,189,248,0.25);
+    outline-offset: 8px;
+    box-shadow: 0 0 0 9px rgba(56,189,248,0.06), 0 0 20px rgba(56,189,248,0.15);
+  }
 
   .hero-badge, .hero-badge2, .data-float { display:none; }
 
-  /* Fix name cutoff — scale down to fit screen */
   .hero-name {
     font-size:clamp(28px, 9vw, 44px);
     word-break:keep-all;
@@ -970,7 +968,6 @@ footer {
 
   .hero-btns { justify-content:center; }
 
-  /* Prevent ALL text from overflowing */
   p, li, div {
     max-width:100%;
     overflow-wrap:break-word;
@@ -981,11 +978,6 @@ footer {
   .services-grid, .projects-grid { grid-template-columns:1fr; }
   .exp-card { grid-template-columns:1fr; gap:16px; padding:24px; }
   footer { flex-direction:column; gap:16px; padding:28px 20px; text-align:center; }
-}
-
-}
-
-  .hero-stats { gap:24px; }
 }
 </style>
 </head>
@@ -1045,9 +1037,7 @@ footer {
     <div class="hero-photo-wrap">
       <div class="hero-photo-bg"></div>
       <div class="hero-photo">
-        <div class="hero-photo">
-  <img src="https://i.postimg.cc/PrVP9KYV/Chat-GPT-Image-Mar-7-2026-08-04-37-PM.png" style="width:100%; height:100%; object-fit:cover;">
-</div>
+        <img src="https://i.postimg.cc/PrVP9KYV/Chat-GPT-Image-Mar-7-2026-08-04-37-PM.png" style="width:100%; height:100%; object-fit:cover;">
       </div>
       <div class="hero-badge">
         <div class="hero-badge-icon">📊</div>
@@ -1060,7 +1050,6 @@ footer {
         <div class="hero-badge2-text">Birmingham City University</div>
       </div>
     </div>
-    <!-- floating decorative data numbers -->
     <div class="data-float" style="top:20%;left:-60px;animation-delay:0s">SELECT * FROM insights</div>
     <div class="data-float" style="bottom:25%;right:-70px;animation-delay:2s">df.groupby('strategy')</div>
     <div class="data-float" style="top:60%;left:-50px;animation-delay:4s">KPI: +23%</div>
@@ -1375,11 +1364,11 @@ footer {
       <h3>Get in touch.<br>Let's build something.</h3>
       <p>Whether you have an internship opportunity, want to collaborate on a project, or simply want to connect — I'd love to hear from you.</p>
       <div class="contact-items">
-        <a href="mailto:ka6177327@gmail.com" class="contact-item">
+        <a href="/cdn-cgi/l/email-protection#eb808adddadcdcd8d9dcab8c868a8287c5888486" class="contact-item">
           <div class="contact-item-icon">✉️</div>
           <div>
             <div class="contact-item-label">Email</div>
-            <div class="contact-item-value">ka6177327@gmail.com</div>
+            <div class="contact-item-value"><span class="__cf_email__" data-cfemail="a5cec493949292969792e5c2c8c4ccc98bc6cac8">[email&#160;protected]</span></div>
           </div>
         </a>
         <a href="https://linkedin.com/in/kadirurrahmanchowdhury" target="_blank" class="contact-item">
@@ -1432,13 +1421,13 @@ footer {
   <div class="footer-brand">Kadir Chowdhury</div>
   <div class="footer-copy">© 2026 Kadir Chowdhury – Portfolio Website</div>
   <div class="footer-links">
-    <a href="mailto:ka6177327@gmail.com">Email</a>
+    <a href="/cdn-cgi/l/email-protection#4d262c7b7c7a7a7e7f7a0d2a202c2421632e2220">Email</a>
     <a href="https://linkedin.com/in/kadirurrahmanchowdhury" target="_blank">LinkedIn</a>
     <a href="#home">Back to top ↑</a>
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // ── Scroll Reveal ──
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => {
@@ -1491,19 +1480,4 @@ const navObserver = new IntersectionObserver((entries) => {
 sections.forEach(s => navObserver.observe(s));
 
 // ── Form submit ──
-document.querySelector('.form-submit').addEventListener('click', function(e) {
-  this.textContent = '✓ Message Sent!';
-  this.style.background = 'var(--teal)';
-  setTimeout(() => {
-    this.textContent = 'Send Message ✦';
-    this.style.background = '';
-  }, 3000);
-});
-</script>
-</body>
-
-</html>
-
-
-
-
+document.queryS
